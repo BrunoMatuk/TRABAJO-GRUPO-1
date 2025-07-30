@@ -1,0 +1,47 @@
+.acerca-section {
+    background: linear-gradient(135deg, #1b0069, #7c3aed);
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #6f3bff, #b76cf1);
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #7e55f9, #cd8bff);
+    color: #fff;
+}
+
+.creadores-section {
+    background: linear-gradient(135deg, #2e036d, #8f49ff);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
