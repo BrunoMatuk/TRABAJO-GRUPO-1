@@ -67,7 +67,7 @@ button[type="submit"]:hover {
     }
     }
     .link{
-        color: white;
+        color: rgb(17, 17, 17);
         font-weight: 700;
         transition: color 0.25;
 
