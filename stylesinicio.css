@@ -1,0 +1,141 @@
+/* Fuente general del sitio */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(to right,
+            #000033,
+            /* Azul casi negro */
+            #000066,
+            #000099,
+            #0000CC,
+            #0000FF,
+            /* Azul puro */
+            #6A0DAD,
+            /* Violeta fuerte */
+            #8A2BE2,
+            #A55EEA,
+            #C084FC,
+            #D8B4FE
+            /* Lila pastel */
+        );
+    color: #f2f2f7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo AppleZone */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.imgLogo {
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Lista del nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #f2f2f7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* inicio del main  */
+/* pensando que agregar... */
+/* Fondo estático para el <main> */
+main {
+    min-height: 100vh;
+    /* ocupa toda la pantalla */
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    /* cubre todo */
+    background-position: center;
+    /* centrada */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* esto la hace estática... */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del contenido encima del fondo */
+.contenido {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* fondo semitransparente(? */
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+/* inicio footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(to right,
+            #D8B4FE,
+            #C084FC,
+            #A55EEA,
+            #8A2BE2,
+            #6A0DAD,
+            #0000FF,
+            #0000CC,
+            #000099,
+            #000066,
+            #000033
+        );
+    color: #f2f2f7;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* dentro del footer */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ddddff;
+}
