@@ -1,141 +1,124 @@
-/* Fuente general del sitio */
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente global */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo del nav */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(to right,
-            #000033,
-            /* Azul casi negro */
-            #000066,
-            #000099,
-            #0000CC,
-            #0000FF,
-            /* Azul puro */
-            #6A0DAD,
-            /* Violeta fuerte */
-            #8A2BE2,
-            #A55EEA,
-            #C084FC,
-            #D8B4FE
-            /* Lila pastel */
-        );
-    color: #f2f2f7;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+/* NAVBAR personalizado */
+nav.navbar {
+  /* Fondo degradado personalizado */
+  background: linear-gradient(to right,
+    #000033, #000066, #000099, #0000CC, #0000FF,
+    #6A0DAD, #8A2BE2, #A55EEA, #C084FC, #D8B4FE);
+  color: #f2f2f7 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Logo AppleZone */
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #ffffff;
-    text-decoration: none;
+/* Marca/logo */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white !important;
 }
 
-.imgLogo {
-    border-radius: 50%;
-    margin-right: 10px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+/* Menú de navegación */
+.nav-link {
+  color: #f2f2f7 !important;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Lista del nav */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+.nav-link:hover {
+  color: #ffffff !important;
+  transform: scale(1.05);
 }
 
-nav ul li a {
-    color: #f2f2f7;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s, transform 0.3s;
+/* Dropdown items */
+.dropdown-menu {
+  background-color: #1a1a2e; /* oscuro para contraste */
 }
 
-nav ul li a:hover {
-    color: #ffffff;
-    transform: scale(1.05);
+.dropdown-item {
+  color: #f2f2f7;
 }
 
-/* inicio del main  */
-/* pensando que agregar... */
-/* Fondo estático para el <main> */
+.dropdown-item:hover {
+  background-color: #2c2c54;
+  color: #ffffff;
+}
+
+/* MAIN */
 main {
-    min-height: 100vh;
-    /* ocupa toda la pantalla */
-    background-image: url('img/fondo.jpg');
-    background-size: cover;
-    /* cubre todo */
-    background-position: center;
-    /* centrada */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* esto la hace estática... */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
-/* Estilo del contenido encima del fondo */
+/* Caja de contenido */
 .contenido {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* fondo semitransparente(? */
-    color: white;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
 }
 
-
-/* inicio footer */
+/* FOOTER */
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 30px;
-    background: linear-gradient(to right,
-            #D8B4FE,
-            #C084FC,
-            #A55EEA,
-            #8A2BE2,
-            #6A0DAD,
-            #0000FF,
-            #0000CC,
-            #000099,
-            #000066,
-            #000033
-        );
-    color: #f2f2f7;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.95rem;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5);
-    z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(to right,
+    #D8B4FE, #C084FC, #A55EEA, #8A2BE2, #6A0DAD,
+    #0000FF, #0000CC, #000099, #000066, #000033);
+  color: #f2f2f7;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
-/* dentro del footer */
 footer a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #ddddff;
+  color: #d43f8a;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+  .contenido {
+    padding: 20px 15px;
+    font-size: 0.95rem;
+  }
+
+  main {
+    background-attachment: scroll;
+    padding: 20px 10px;
+  }
+
+  footer {
+    position: relative;
+    padding: 15px 15px;
+    font-size: 0.85rem;
+  }
 }
