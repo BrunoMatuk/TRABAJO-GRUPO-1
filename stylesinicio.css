@@ -1,0 +1,124 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente global */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR personalizado */
+nav.navbar {
+  /* Fondo degradado personalizado */
+  background: linear-gradient(to right,
+    #000033, #000066, #000099, #0000CC, #0000FF,
+    #6A0DAD, #8A2BE2, #A55EEA, #C084FC, #D8B4FE);
+  color: #f2f2f7 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Marca/logo */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white !important;
+}
+
+/* Menú de navegación */
+.nav-link {
+  color: #f2f2f7 !important;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  transform: scale(1.05);
+}
+
+/* Dropdown items */
+.dropdown-menu {
+  background-color: #1a1a2e; /* oscuro para contraste */
+}
+
+.dropdown-item {
+  color: #f2f2f7;
+}
+
+.dropdown-item:hover {
+  background-color: #2c2c54;
+  color: #ffffff;
+}
+
+/* MAIN */
+main {
+  min-height: 100vh;
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Caja de contenido */
+.contenido {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(to right,
+    #D8B4FE, #C084FC, #A55EEA, #8A2BE2, #6A0DAD,
+    #0000FF, #0000CC, #000099, #000066, #000033);
+  color: #f2f2f7;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #d43f8a;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+  .contenido {
+    padding: 20px 15px;
+    font-size: 0.95rem;
+  }
+
+  main {
+    background-attachment: scroll;
+    padding: 20px 10px;
+  }
+
+  footer {
+    position: relative;
+    padding: 15px 15px;
+    font-size: 0.85rem;
+  }
+}
