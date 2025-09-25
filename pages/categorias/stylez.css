@@ -1,0 +1,206 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    background: #0000FF;
+    background: radial-gradient(circle, rgba(0, 0, 255, 1) 25%, rgba(216, 180, 254, 1) 79%); 
+    font-size: 14px;
+    color: white;
+}
+header {
+    background-color: white;
+    color: blue;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+header h1 {
+    text-align: left;
+    font-size: 40px; 
+    padding: 10px;
+    width: 210px;
+    margin-left: 15px;
+}
+ header button {
+    position: absolute;
+    top: 25px;
+    right: 20px; 
+    font-size: 25px;
+} 
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+    margin: 20px auto;
+}
+.swiper-slide {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icons i {
+    font-size: 20px;
+    color: blueviolet;
+}
+.icons img {
+    width: 100px;
+    height: 100px;
+}
+.product-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+.product-txt span {
+    font-size: 15px;
+    color: blueviolet;
+    font-weight: bold;
+    
+}
+.product-txt h3 {
+    font-size: 15px;
+    color: black;
+}
+
+.product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+.product-img img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.btn-1 { 
+    display: inline-block;
+    padding: 10px 55px;
+    border: 2px solid blueviolet;
+    border-radius: 25px;
+    color: blueviolet;
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.text-center img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.video iframe {
+    border-radius: 10px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+#sect1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30xp auto;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 1px outset #c084c0;
+}
+.sect2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30xp auto;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 1px outset #0000FF;
+}
+#sect3 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30xp auto;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 1px outset #c084c0;
+}
+#sect4 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30xp auto;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 1px outset #0000FF;
+}
+.carta {
+    box-sizing: border-box;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px){
+    .carta {
+        height: 650px;
+    }
+}
+.tarjet {
+    background: #C084FC;
+    background: linear-gradient(90deg, rgba(192, 132, 252, 1) 50%, rgba(0, 0, 204, 1) 100%);
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.tarjet:hover {
+    box-shadow: 0 5px 15px black;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.icono {
+   height: 90px;
+   width: 90px;
+   margin-top: 10px;
+   margin-left: 30px;
+   font-size: 62px;
+}
+.tarjet h3 {
+    position: relative;
+    width: 250px;
+    bottom: 57px;
+    left: 140px;
+}
+.tarjet p {
+    position: relative;
+    width: 250px;
+    bottom: 55px;
+    left: 140px;
+    
+}
+.tarjet button {
+    position: relative;
+    left: 160px;
+    bottom: 40px;
+    font-size: 20px;
+    border: 3px white solid;
+}
+.tarjet button a {
+    text-decoration: none;
+}
